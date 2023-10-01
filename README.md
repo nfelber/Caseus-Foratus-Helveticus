@@ -12,9 +12,10 @@ Create a file called `teloxide_token.txt` with your bot's Telegram API token.
 $ echo "<API Token>" > teloxide_token.txt
 ```
 
-Then edit the id of the chat the bot should send to in the `entrypoint` of the file `compose.yaml`.
+Then edit the id of the chat the bot should send to in `compose.yaml`.
 
-```
+```yaml
+#   ...
     entrypoint: [ '/bin/bash', '-c', 'export TELOXIDE_TOKEN=$$(cat /run/secrets/teloxide_token) ; ./caseus-foratus-helveticus "<Chat id here>"' ]
 ```
 
@@ -23,5 +24,5 @@ Feel free to edit the reminder dates in the dates folder (this can be done while
 Finally, start the bot using `docker-compose`:
 
 ```bash
-docker-compose up -d
+$ docker-compose up -d
 ```
