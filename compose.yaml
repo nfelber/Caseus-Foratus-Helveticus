@@ -10,6 +10,7 @@ services:
     secrets:
       - teloxide_token
     entrypoint: [ '/bin/bash', '-c', 'export TELOXIDE_TOKEN=$$(cat /run/secrets/teloxide_token) ; ./caseus-foratus-helveticus "-1001909394961"' ]
+    restart: always
     network_mode: "host"
     volumes:
       - ./dates:/dates
