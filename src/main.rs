@@ -32,7 +32,7 @@ async fn main() {
     let trash_reminder = ReminderService::new(
         bot.clone(),
         ChatId(chat_id).into(),
-        "♻️🗑️ <b>Tomorrow is trash collection day!</b>".to_string(),
+        "♻️🗑️ <b>Tomorrow is trash collection day!</b>\n<b>Dont forget to take it out!</b> 👀".to_string(),
         "dates/trash-dates.txt".to_string(),
         ClockTime::new(20, 0, 0)
     );
@@ -44,7 +44,7 @@ async fn main() {
     let compost_reminder = ReminderService::new(
         bot.clone(),
         ChatId(chat_id).into(),
-        "♻️🍂️ <b>Tomorrow is compost collection day!</b>".to_string(),
+        "♻️🍂️ <b>Tomorrow is compost collection day!</b>\n<b>Dont forget to take it out!</b> 👀".to_string(),
         "dates/compost-dates.txt".to_string(),
         ClockTime::new(20, 0, 0)
     );
@@ -56,7 +56,7 @@ async fn main() {
     let glass_reminder = ReminderService::new(
         bot.clone(),
         ChatId(chat_id).into(),
-        "♻️🫙 <b>Tomorrow is glass collection day!</b>".to_string(),
+        "♻️🫙 <b>Tomorrow is glass collection day!</b>\n<b>Dont forget to take it out!</b> 👀".to_string(),
         "dates/glass-dates.txt".to_string(),
         ClockTime::new(20, 0, 0)
     );
@@ -68,7 +68,7 @@ async fn main() {
     let paper_reminder = ReminderService::new(
         bot.clone(),
         ChatId(chat_id).into(),
-        "♻️🗞️ <b>Tomorrow is paper collection day!</b>".to_string(),
+        "♻️🗞️ <b>Tomorrow is paper collection day!</b>\n<b>Dont forget to take it out!</b> 👀".to_string(),
         "dates/trash-dates.txt".to_string(),
         ClockTime::new(20, 0, 0)
     );
