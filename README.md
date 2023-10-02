@@ -19,6 +19,8 @@ Then edit the id of the chat the bot should send to in `compose.yaml`.
     entrypoint: [ '/bin/bash', '-c', 'export TELOXIDE_TOKEN=$$(cat /run/secrets/teloxide_token) ; ./caseus-foratus-helveticus "<Chat id here>"' ]
 ```
 
+You can find the id of a chat by adding the bot to the chat and then querying `https://api.telegram.org/bot<API Token>/getUpdates` (using a for example a browser).
+
 Feel free to edit the reminder dates in the dates folder (this can be done while the bot is running).
 
 Finally, start the bot using `docker-compose`:
