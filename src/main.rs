@@ -69,7 +69,7 @@ async fn main() {
         bot.clone(),
         ChatId(chat_id).into(),
         "♻️🗞️ <b>Tomorrow is paper collection day!</b>\n<b>Dont forget to take it out!</b> 👀".to_string(),
-        "dates/trash-dates.txt".to_string(),
+        "dates/paper-dates.txt".to_string(),
         ClockTime::new(20, 0, 0)
     );
     tasks.spawn(async move {
