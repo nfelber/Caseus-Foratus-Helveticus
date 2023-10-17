@@ -97,6 +97,7 @@ impl DinnerService {
                 Let our cook know how many people to expect! 👩‍🍳", emoji),
             [
                 "I'll be there! 🍽".into(),
+                "I'll bring a friend! 🍽🍽".into(),
                 "Not tonight...".into()
                 ]
             ).is_anonymous(false).await?;
